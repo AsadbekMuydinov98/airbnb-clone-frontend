@@ -15,9 +15,9 @@ import BookingPage from './pages/booking-page';
 import PlaceEditPage from './pages/place-edit-page';
 
 // axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+// axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://airbnb-clone-backend-mwww.onrender.com/';
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:4000';
-// axios.defaults.baseURL = 'https://airbnb-clone-backend-mwww.onrender.com/';
 
 
 function App() {
