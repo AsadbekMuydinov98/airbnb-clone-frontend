@@ -8,9 +8,6 @@ export default function RegisterPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  function salom(){
-    axios.get('/user/login')
-  }
   async function reg(ev) {
     ev.preventDefault();
     try {
@@ -47,7 +44,6 @@ export default function RegisterPage() {
                 onChange={e=>setPassword(e.target.value)}
                 />
           <button className="primary">Register</button>
-          <h1 onClick={salom}>salom</h1>
           <div className="text-center py-2 text-gray-500">
             Already a member? <Link className="underline text-black" to={'/login'}>Register</Link>
           </div>
