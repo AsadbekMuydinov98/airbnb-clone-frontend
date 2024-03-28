@@ -2,7 +2,7 @@ import axios from 'axios'
 import {getItem} from '../helpers/persistance-storage'
 
 // axios.defaults.baseURL = 'https://api.realworld.io/api'
-axios.defaults.baseURL = 'http://localhost:10000'
+axios.defaults.baseURL = 'https://airbnb-clone-backend-2y3a.onrender.com'
 
 axios.interceptors.request.use(config => {
 	const token = getItem('token')
