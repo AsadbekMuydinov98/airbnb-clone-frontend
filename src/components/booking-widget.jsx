@@ -50,12 +50,14 @@ export default function BookingWidget({place}) {
             <label>Check in:</label>
             <input type="date"
                    value={checkIn}
-                   onChange={ev => setCheckIn(ev.target.value)} className="w-[80%]"/>
+                   onChange={ev => setCheckIn(ev.target.value)} 
+                   className="w-[80%]"/>
           </div>
           <div className="py-3 px-2 border-l flex-1">
             <label>Check out:</label>
             <input type="date" value={checkOut}
-                   onChange={ev => setCheckOut(ev.target.value)} className="w-[80%]"/>
+                   onChange={ev => setCheckOut(ev.target.value)} 
+                   className="w-[80%]"/>
           </div>
         </div>
         <div className="py-3 px-4 border-t">

@@ -47,23 +47,25 @@ export default function BookingEditWidget({place}) {
       </div>
       <div className="border rounded-2xl mt-4">
         <div className="flex">
-          <div className="py-3 px-4">
+          <div className="py-3 px-2 flex-1">
             <label>Check in:</label>
             <input type="date"
               value={checkIn}
-              onChange={ev => setCheckIn(ev.target.value)}/>
+              onChange={ev => setCheckIn(ev.target.value)} 
+              className="w-[80%]"/>
           </div>
-          <div className="py-3 px-4 border-l">
+          <div className="py-3 px-2 border-l flex-1">
             <label>Check out:</label>
             <input type="date" value={checkOut}
-              onChange={ev => setCheckOut(ev.target.value)}/>
+              onChange={ev => setCheckOut(ev.target.value)} 
+              className="w-[80%]"/>
           </div>
         </div>
         <div className="py-3 px-4 border-t">
           <label>Number of guests:</label>
           <input type="number"
             value={numberOfGuests}
-            onChange={ev => setNumberOfGuests(ev.target.value)}/>
+            onChange={ev => setNumberOfGuests(ev.target.value)} />
         </div>
         {numberOfNights > 0 && (
           <div className="py-3 px-4 border-t">
